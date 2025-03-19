@@ -172,3 +172,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Hugo によるビルド成果物
+public/
+
+# Hugo Extended が自動生成するリソース（SCSS ビルドキャッシュなど）
+resources/
