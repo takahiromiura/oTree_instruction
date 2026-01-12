@@ -12,3 +12,36 @@ theme = 'hugo-theme-relearn'
 [params]
     BookSection = "*"
     customCSS = ["css/custom.css"]
+
+    # Relearn theme parameters
+    showVisitedLinks = true
+    disableBreadcrumb = false
+    disableNextPrev = false
+    themeVariant = "relearn-light"
+
+    # Search
+    disableSearch = false
+    disableSearchHiddenPages = true
+
+    # MathJax をグローバルで有効化
+    mathJax = true
+
+    # インラインコードのコピーボタンを無効化
+    disableInlineCopyToClipBoard = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Markdown 内の HTML を許可
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    lineNos = true
+    lineNumbersInTable = true
+    style = "monokai"

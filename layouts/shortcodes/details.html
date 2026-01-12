@@ -1,0 +1,76 @@
+<div class="details-box">
+  <div class="details-title">
+    <i class="fa-solid fa-magnifying-glass-plus"></i> {{ .Get "title" }}
+  </div>
+  <details>
+  <summary class="details-expand"><i class="fa-solid fa-plus"></i> もっと詳しく</summary>
+  <div class="details-content">
+{{ .Inner }}
+  </div>
+  <div class="details-close" onclick="this.parentElement.removeAttribute('open')"><i class="fa-solid fa-minus"></i> 閉じる</div>
+  </details>
+</div>
+
+<style>
+.details-box {
+  margin: 1rem 0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.details-title {
+  background-color: rgba(128, 90, 213, 1);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.details-box details {
+  margin: 0;
+  background-color: rgba(128, 90, 213, 0.08);
+}
+
+.details-box details summary {
+  cursor: pointer;
+  color: rgba(128, 90, 213, 1);
+  list-style: none;
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.details-box details summary:hover {
+  color: rgba(100, 70, 180, 1);
+}
+
+.details-box details summary::-webkit-details-marker {
+  display: none;
+}
+
+.details-box details summary::marker {
+  display: none;
+}
+
+.details-content {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid rgba(128, 90, 213, 0.2);
+}
+
+.details-close {
+  cursor: pointer;
+  color: rgba(128, 90, 213, 1);
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(128, 90, 213, 0.2);
+}
+
+.details-close:hover {
+  color: rgba(100, 70, 180, 1);
+}
+
+.details-box details[open] > summary {
+  display: none;
+}
+</style>

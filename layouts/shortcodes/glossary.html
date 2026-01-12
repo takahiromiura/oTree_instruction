@@ -1,0 +1,15 @@
+{{- with .Get "link" -}}
+<a href="{{ . }}" class="glossary-term" title="詳細を見る">
+  {{- $.Get "term" -}}<span class="glossary-icon">?</span>
+  {{- with $.Get "desc" -}}
+  <span class="glossary-tooltip">{{ . }}</span>
+  {{- end -}}
+</a>
+{{- else -}}
+<span class="glossary-term">
+  {{- .Get "term" -}}
+  {{- with .Get "desc" -}}
+  <span class="glossary-tooltip">{{ . }}</span>
+  {{- end -}}
+</span>
+{{- end -}}

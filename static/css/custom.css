@@ -1,0 +1,63 @@
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+    }
+    
+strong,
+b {
+    font-weight: 600;
+}
+
+/* Glossary term styles */
+.glossary-term {
+    position: relative;
+    display: inline;
+    color: #0056b3;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a.glossary-term:hover {
+    text-decoration: underline;
+}
+
+.glossary-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.2em;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6c757d;
+    border-radius: 50%;
+    text-decoration: none;
+    vertical-align: super;
+}
+
+a.glossary-term:hover .glossary-icon {
+    background-color: #007bff;
+}
+
+.glossary-term .glossary-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 0.75em;
+    border-radius: 4px;
+    font-size: 0.85em;
+    white-space: nowrap;
+    z-index: 100;
+    transition: opacity 0.2s;
+}
+
+.glossary-term:hover .glossary-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
