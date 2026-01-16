@@ -61,3 +61,20 @@ a.glossary-term:hover .glossary-icon {
     visibility: visible;
     opacity: 1;
 }
+
+/* Heading hierarchy emphasis (option B) */
+#R-body h2 {
+    font-size: 1.6rem;
+    margin-top: 2.4rem;
+    padding: 0.35rem 0.6rem 0.35rem 0.9rem;
+    color: var(--MAIN-TITLES-TEXT-color);
+    border-left: 6px solid var(--PRIMARY-color);
+    background: linear-gradient(90deg, rgba(125, 201, 3, 0.12), transparent 70%);
+}
+
+#R-body h3 {
+    font-size: 1.3rem;
+    margin-top: 1.7rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
