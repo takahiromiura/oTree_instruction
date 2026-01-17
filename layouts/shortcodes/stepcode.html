@@ -1,0 +1,39 @@
+{{- $label := .Get "label" -}}
+{{- if not $label -}}
+  {{- $label = .Inner | plainify | strings.TrimSpace -}}
+{{- end -}}
+{{- if not $label -}}
+  {{- $label = "Githubでコードを確認" -}}
+{{- end -}}
+
+<div class="stepcode-wrap">
+  <a class="stepcode-link" href="{{ .Get "url" }}" target="_blank" rel="noopener">
+    <i class="fa-brands fa-github"></i> {{ $label }}
+  </a>
+</div>
+
+<style>
+.stepcode-link {
+  display: inline-block;
+  background-color: #24292f;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.5rem 0.9rem;
+  border-radius: 4px;
+}
+
+.stepcode-link:hover {
+  background-color: #1f2429;
+  color: #fff;
+}
+
+.stepcode-link:visited {
+  color: #fff;
+}
+
+.stepcode-wrap {
+  text-align: right;
+}
+</style>
