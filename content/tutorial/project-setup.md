@@ -143,7 +143,7 @@ dictator-game/
 ```
 
 {{% notice style="note" title="ファイル構成について" %}}
-oTree の公式ドキュメントでは {{< glossary term="no-self format" link="/reference/no-self-format" >}} が使われています。
+oTree の公式ドキュメントでは {{% glossary term="no-self format" link="/reference/no-self-format/" desc="インスタンスメソッドを使わない形式" %}} が使われています。
 この形式ではモデルやページのコードをすべて `__init__.py` 内に記述します。
 {{% /notice %}}
 
