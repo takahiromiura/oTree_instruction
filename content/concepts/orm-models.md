@@ -5,7 +5,7 @@ weight = 4
 math = true
 +++
 
-oTree における {{% glossary term="ORM" link="../../reference/orm/" desc="Object-Relational Mapping: オブジェクトとデータベースを対応付ける仕組み" %}} モデルと実験用語および oTree の概念との対応関係は以下のようになっています。
+oTree における {{% glossary term="ORM" link="/reference/orm/" desc="Object-Relational Mapping: オブジェクトとデータベースを対応付ける仕組み" %}} モデルと実験用語および oTree の概念との対応関係は以下のようになっています。
 
 | 実験用語   | oTree の概念 | ORM モデル |
 | ---------- | ------------ | ---------|
