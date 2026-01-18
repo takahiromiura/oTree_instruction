@@ -56,7 +56,7 @@ dictator-game/
 初期状態では `_static/global/empty.css` が作成されています。
 
 このチュートリアルでは `settings.py` の設定方法を後ほど説明しますが、`_static/` については扱いません。
-これについては、[静的ファイル]({{< relref "/guide/static-files" >}}) を参照してください。
+これについては、[静的ファイル]({{% relref "/guide/static-files" %}}) を参照してください。
 
 {{% notice note %}}
 `settings.py` と `_static` フォルダ（空でも可）以外のファイルは削除しても問題ありません。
