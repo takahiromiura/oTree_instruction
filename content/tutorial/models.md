@@ -47,7 +47,7 @@ math = true
 独裁者ゲームは 2 人 1 組で 1 ラウンドのみ行うため、上記のように設定します。
 
 `Subsession`、`Group`、`Player` クラスは `pass` のみで定義しても構いません。
-次のようなコードになるはずです。
+骨格となるコードは次のようになります。
 
 ```python { title="dictator/models.py" }
 from otree.api import BaseConstants, BaseSubsession, BaseGroup, BasePlayer, models
