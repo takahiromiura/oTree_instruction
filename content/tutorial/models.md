@@ -1,7 +1,7 @@
 +++
 title = "モデルの定義"
 weight = 3
-draft = true
+draft = false
 math = true
 +++
 

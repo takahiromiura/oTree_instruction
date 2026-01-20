@@ -1,7 +1,7 @@
 +++
 title = "プロジェクト作成"
 weight = 2
-draft = true
+draft = false
 +++
 
 oTree プロジェクトとアプリを作成します。
